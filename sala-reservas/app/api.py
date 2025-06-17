@@ -11,7 +11,7 @@ def reservar():
     disponible = verificar_disponibilidad(reservas, data)
     if disponible:
         reservas.append(data)
-        return jsonify({"mensaje": "Reservada con éxito"}), 201
+        return jsonify({"mensaje": "Reservada con éxito "}), 201
     else:   
-        return jsonify({"mensaje": "Sala no disponible"}), 409
+        return jsonify({"mensaje": "Sala no disponible "}), 409
     a
